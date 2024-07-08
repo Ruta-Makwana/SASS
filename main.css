@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  background-color: #ececec;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  padding: 0rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__title {
+  font-size: 3rem;
+}
+.navbar__menu {
+  font-size: 1rem;
+}
+.navbar__menu-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__menu-link-items {
+  padding: 0.75rem;
+  list-style: none;
+}
+.navbar__menu-link-items a {
+  text-decoration: none;
+  color: black;
+}
+.navbar__menu-link-items a button {
+  background-color: #00CC66;
+  color: white;
+  border-radius: 0.4rem;
+  border: none;
+  padding: 0.75rem 1.2rem;
+  font-size: 1rem;
+}
+.navbar__menu-link-items a button:hover {
+  background-color: #FB4B4E;
+  cursor: pointer;
+}
+.navbar__menu-link-items a:hover {
+  color: #00CC66;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+}
+.hero__container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.hero__container-text {
+  margin: auto 0;
+}
+.hero__container-text h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+  color: #00CC66;
+}
+.hero__container-text h1 p {
+  color: black;
+}
+.hero__container-text h3 {
+  font-size: 2rem;
+}
+.hero__container-text button {
+  background-color: #00CC66;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(to right, #FB4B4E 50%, #00CC66 50%);
+  background-size: 210% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease;
+}
+.hero__container-text button:hover {
+  background-position: left bottom;
+}
+.hero__container-image img {
+  height: 85vh;
+}/*# sourceMappingURL=main.css.map */

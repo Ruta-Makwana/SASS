@@ -1,0 +1,98 @@
+body{
+    background-color: $background;
+    font-family: $font;
+}
+
+.navbar{
+    padding: 0rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__title{
+        font-size: $large-font;
+    }
+    &__menu{
+        font-size: $anchor-font;
+
+        &-link{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &-items{
+                padding: 0.75rem;
+                list-style: none;
+
+                & a{
+                    text-decoration: none;
+                    color: $secondary-color;
+
+                    & button{
+                        background-color: $primary-color;
+                        color: white;
+                        border-radius: $border-radius;
+                        border: none;
+                        padding: 0.75rem 1.2rem;
+                    }
+
+                    & button:hover{
+                        background-color: $tertiary-color;
+                    }
+                }
+
+                & a:hover{
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+
+    &__container{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        &-text{
+            margin: auto 0;
+            
+            & h1{
+                font-size: 4rem;
+                line-height: 1rem;
+                color: $primary-color;
+                & p{
+                    color: $secondary-color;
+                }
+            }
+            & h3{
+                font-size: $large-font;
+            }
+
+            & button{
+                background-color: $primary-color;
+                color: white;
+                border: none;
+                border-radius: $border-radius;
+                padding: 0.75rem 1.5rem;
+
+                background: linear-gradient(to right, $tertiary-color 50%, $primary-color 50%);
+                background-size: 210% 100%;
+                background-position: right bottom;
+                transition: all .5s ease;
+            }
+
+            & button:hover{
+                background-position: left bottom;
+            }
+        }
+
+        &-image img{
+            height: 85vh;
+        }
+    }
+}
